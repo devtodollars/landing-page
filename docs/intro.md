@@ -7,7 +7,7 @@ slug: /
 
 Let's discover **Docusaurus in less than 5 minutes**.
 
-## Getting Started
+## Getting Started 1
 
 Get started by **creating a new site**.
 
