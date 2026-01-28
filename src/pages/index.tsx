@@ -1,24 +1,21 @@
 import Layout from "@theme/Layout";
 import HeroHome from "../components/hero-home";
-import Cta from "../components/cta";
-import AboutUs from "../components/about-us";
-import Pricing from "../components/pricing";
-import MeetFounders from "../components/meet-founders";
+import SplitPaths from "../components/split-paths";
 import ValueProp from "../components/value-prop";
+import OurProcess from "../components/our-process";
+import AboutUs from "../components/about-us";
 import Testimonial from "../components/testimonial";
-import MVPScope from "../components/mvp-scope";
+import Cta from "../components/cta";
 
 export default function Home(): JSX.Element {
-
   return (
-    <Layout title="Home" description="The World's Most Transparent Dev Agnecy">
+    <Layout title="Home" description="The World's Most Transparent Dev Agency">
       <HeroHome />
+      <SplitPaths />
       <ValueProp />
-      <Pricing />
-      <MVPScope />
+      <OurProcess />
       <AboutUs />
       <Testimonial />
-      <MeetFounders />
       <Cta />
     </Layout>
   );

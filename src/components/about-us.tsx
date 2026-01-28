@@ -7,11 +7,11 @@ const features = [
     icon: "/landing/slayschool-logo.png",
   },
   {
-    name: "Fleeting Notes",
+    name: "Auto Accru",
     description:
-      "With over 9000 users, Fleeting Notes is a note-taking app specifically designed to take quick notes into Obsidian.",
-    href: "https://fleetingnotes.app",
-    icon: "/landing/fleetingnotes-logo.png",
+      "An AI agent designed to assist Accounting Firms on automating their bookkeeping process.",
+    href: "https://autoaccru.com",
+    icon: "/img/autoaccru-logo.png",
   },
   {
     name: "Event Mate",

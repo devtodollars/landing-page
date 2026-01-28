@@ -4,6 +4,7 @@ const people = [
     role: "Co-Founder",
     imageUrl: "/landing/amirali.jpeg",
     bio: "A passionate software developer with extensive industry and freelance experience, Amirali has successfully scoped and built numerous MVPs. Amirali is currently working full-time on devtodollars.",
+    xUrl: "https://x.com/Zimbilazim",
     linkedinUrl: "https://www.linkedin.com/in/amirali-azimi-tabrizi/",
   },
   {

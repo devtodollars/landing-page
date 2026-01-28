@@ -13,6 +13,13 @@ interface Testimonial {
 
 const testimonials = [
   {
+    img: '/img/kevin.jpeg',
+    quote: "It was an amazing experience working with Amirali. He helped us to build a strong foundation for our application to be ready for scale. While helping us to stay up to date with the latest trends in AI and increasing speed, he also used his extensive software development knowledge to make sure the system is ready for scale.",
+    name: 'Kevin Wu',
+    role: 'CEO, AutoAccru',
+    project: 'Auto Accru'
+  },
+  {
     img: '/img/Sabrina.png',
     quote: "I had an incredible experience working with the DevtoDollars Team. They were not only responsive and fully understood the vision but also made the entire process seamless. As a founder with without a technical background, I was nervous about diving into the tech side, but they were able to simplify everything in a way that was easy for me to understand. I truly appreciated their ability to make complex concepts accessible, and it made all the difference.",
     name: 'Sabrina Roy',

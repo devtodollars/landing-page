@@ -17,8 +17,8 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@docusaurus/core": "^3.4.0",
-    "@docusaurus/preset-classic": "^3.4.0",
+    "@docusaurus/core": "^3.9.2",
+    "@docusaurus/preset-classic": "^3.9.2",
     "@headlessui/react": "^1.7.19",
     "@heroicons/react": "^2.1.4",
     "@mdx-js/react": "^3.0.0",
@@ -31,9 +31,9 @@
     "react-github-btn": "^1.4.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.4.0",
-    "@docusaurus/tsconfig": "^3.4.0",
-    "@docusaurus/types": "^3.4.0",
+    "@docusaurus/module-type-aliases": "^3.9.2",
+    "@docusaurus/tsconfig": "^3.9.2",
+    "@docusaurus/types": "^3.9.2",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
     "shelljs": "^0.8.5",

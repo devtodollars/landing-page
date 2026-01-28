@@ -21,7 +21,7 @@ interface ValueProp {
 const valueprops: ValueProp[] = [
     {
       name: "Transferability",
-      id: "end-to-end",
+      id: "transferability",
       description: "Our documentation is available even before you start working with us so you can be sure that your future CTO has everything they need to continue growing your business.",
       icon: <FolderSync/>,
       features: [
@@ -40,10 +40,10 @@ const valueprops: ValueProp[] = [
     {
       name: "Speed",
       id: "speed",
-      description: "Typical MVPs take us a month to build from start to finish and at maximum we expect to spend 2 months. We take out all the fluff and just focus on what matters.",
+      description: "Deliver your project from start to finish within 2 weeks to a month. We leverage AI responsibly to accelerate development while applying our extensive industry experience to build reliable, production-ready systems.",
       icon: <Gauge />,
       features: [
-        {desc: <span>Deliver your project from <strong>start to finish</strong> within <strong>1-2 months</strong></span>},
+        {desc: <span>Deliver your project from <strong>start to finish</strong> within <strong>2 weeks to a month</strong>, leveraging AI responsibly alongside our industry experience</span>},
       ],
     },
     {

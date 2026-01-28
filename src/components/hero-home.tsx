@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import GitHubButton from "react-github-btn";
+import { ChevronDown } from "lucide-react";
 
 export default function HeroHome() {
   const [stars, setStars] = useState(null);
@@ -43,27 +43,16 @@ export default function HeroHome() {
           <p className="mt-6 text-lg leading-8 text-gray-300">
             Our templated code and processes are available for free and{" "}
             <span className="text-primary">
-              trusted by {stars ? stars : "hundreds of"} developers
+              trusted by {stars ? stars : "956"} developers
             </span>
           </p>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
-            <a
-              href="https://cal.com/amirali-tabrizi/30min"
-              className="rounded-md bg-primary px-5 py-3 text-md font-semibold text-black shadow-sm hover:bg-primary/80 hover:text-black hover:no-underline"
-            >
-              Let's Meet!
-            </a>
-            <GitHubButton
-              href="https://github.com/devtodollars/mvp-boilerplate"
-              data-color-scheme="no-preference: light; light: light; dark: dark;"
-              data-size="large"
-              data-icon="octicon-star"
-              data-show-count="true"
-              aria-label="Star devtodollars/mvp-boilerplate on GitHub"
-            >
-              Star
-            </GitHubButton>
-          </div>
+          <button
+            onClick={() => document.getElementById("choose-path")?.scrollIntoView({ behavior: "smooth" })}
+            className="mt-12 cursor-pointer bg-transparent border-none p-0"
+            aria-label="Scroll to next section"
+          >
+            <ChevronDown className="mx-auto h-8 w-8 animate-bounce text-white/50" />
+          </button>
         </div>
       </div>
       <div

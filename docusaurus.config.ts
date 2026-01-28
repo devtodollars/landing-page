@@ -68,6 +68,7 @@ const config: Config = {
           label: 'Docs',
         },
         { to: '/blog', label: 'Blog', position: 'left' },
+        { to: '/about', label: 'About Us', position: 'left' },
         {
           href: 'https://discord.gg/6q63Xa6SEB',
           className: 'header-discord-link',
@@ -77,7 +78,7 @@ const config: Config = {
           href: 'https://github.com/devtodollars/startup-boilerplate',
           position: 'right',
           className: 'header-github-link',
-          ariaLabel: 'GitHub repository',
+          'aria-label': 'GitHub repository',
         },
       ],
     },
@@ -95,6 +96,10 @@ const config: Config = {
               label: 'Blog',
               to: '/blog',
             },
+            {
+              label: 'About Us',
+              to: '/about',
+            },
           ],
         },
         {
@@ -106,7 +111,7 @@ const config: Config = {
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/ithinkwong',
+              href: 'https://x.com/Zimbilazim',
             },
           ],
         },
