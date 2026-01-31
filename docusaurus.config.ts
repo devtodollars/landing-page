@@ -115,6 +115,14 @@ const config: Config = {
             },
           ],
         },
+        {
+          title: 'We Accept',
+          items: [
+            {
+              html: `<span class="footer-monero"><img src="/landing/monero-xmr-logo.svg" alt="Monero" width="24" height="24" />Monero</span>`,
+            },
+          ],
+        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} DevToDollars`,
     },
