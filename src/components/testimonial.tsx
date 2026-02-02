@@ -65,6 +65,7 @@ export default function FancyTestimonialsSlider() {
   }, [])  
 
   return (
+    <div className="pb-16">
     <div className="mx-auto text-center py-5 md:max-w-3xl md:h-[32rem] h-[50rem] relative overflow-hidden">
       {/* Testimonial image */}
       <div className="relative h-32">
@@ -146,6 +147,7 @@ export default function FancyTestimonialsSlider() {
           </button>
         ))}
       </div>
+    </div>
     </div>
   )
 }

@@ -34,3 +34,21 @@
   --ifm-color-primary-lightest: #ffe595;
   --ifm-background-color: #343434;
 }
+
+/* Twinkle animation for stars */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.3); }
+}
+.animate-twinkle {
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+/* Module card glow effect */
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(255, 202, 40, 0); }
+  50% { box-shadow: 0 0 30px rgba(255, 202, 40, 0.15); }
+}
+.module-card-glow:hover {
+  animation: glow-pulse 2s ease-in-out infinite;
+}

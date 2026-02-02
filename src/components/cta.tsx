@@ -1,6 +1,6 @@
 export default function Cta() {
   return (
-    <div className="bg-gray-700">
+    <div>
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
           <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -18,10 +18,10 @@ export default function Cta() {
               Book a Free Consultation
             </a>
             <a
-              href="https://github.com/devtodollars/mvp-boilerplate"
+              href="/boilerplate"
               className="rounded-md bg-white/10 px-5 py-3 text-md font-semibold text-white shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white hover:no-underline hover:text-white"
             >
-              Get the Boilerplate
+              View the Boilerplate
             </a>
           </div>
           <svg

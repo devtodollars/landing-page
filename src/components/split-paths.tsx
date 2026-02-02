@@ -1,21 +1,6 @@
 import { CheckIcon } from "@heroicons/react/20/solid";
-import GitHubButton from "react-github-btn";
 
 const paths = [
-  {
-    name: "Build It Yourself",
-    id: "diy",
-    description:
-      "Get started in under 30 minutes with our production-ready boilerplate",
-    features: [
-      "Flutter + Next.js + Supabase + Stripe",
-      "Auth, payments & database pre-configured",
-      "Detailed documentation",
-      "Best Practices for using AI while programming",
-      "Active Discord community",
-    ],
-    highlighted: false,
-  },
   {
     name: "Let Us Build It",
     id: "agency",
@@ -29,6 +14,19 @@ const paths = [
     ],
     highlighted: true,
     badge: "Recommended",
+  },
+  {
+    name: "Build It Yourself",
+    id: "diy",
+    description:
+      "Use our open-source boilerplate to launch your MVP in under 30 minutes",
+    features: [
+      "Flutter + Next.js + Supabase + Stripe",
+      "Auth, payments & database pre-configured",
+      "Detailed documentation",
+      "Active Discord community",
+    ],
+    highlighted: false,
   },
 ];
 
@@ -90,33 +88,19 @@ export default function SplitPaths() {
                 ))}
               </div>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                {path.id === "diy" ? (
-                  <>
-                    <div className="flex items-center justify-center">
-                      <GitHubButton
-                        href="https://github.com/devtodollars/mvp-boilerplate"
-                        data-color-scheme="no-preference: light; light: light; dark: dark;"
-                        data-size="large"
-                        data-icon="octicon-star"
-                        data-show-count="true"
-                        aria-label="Star devtodollars/mvp-boilerplate on GitHub"
-                      >
-                        Star on GitHub
-                      </GitHubButton>
-                    </div>
-                    <a
-                      href="/docs"
-                      className="rounded-md bg-white/10 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-white/20 hover:text-white hover:no-underline"
-                    >
-                      Read the docs
-                    </a>
-                  </>
-                ) : (
+                {path.id === "agency" ? (
                   <a
                     href="https://cal.com/amirali-tabrizi/30min"
                     className="rounded-md bg-primary px-3.5 py-2.5 text-center text-sm font-semibold text-black shadow-sm hover:bg-primary/80 hover:text-black hover:no-underline"
                   >
                     Book a Free Call
+                  </a>
+                ) : (
+                  <a
+                    href="/boilerplate"
+                    className="rounded-md bg-white/10 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-white/20 hover:text-white hover:no-underline"
+                  >
+                    View Boilerplate
                   </a>
                 )}
               </div>

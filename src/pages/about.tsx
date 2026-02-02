@@ -1,9 +1,11 @@
 import Layout from "@theme/Layout";
 import MeetFounders from "../components/meet-founders";
+import FixedBackground from "../components/fixed-background";
 
 export default function About(): JSX.Element {
   return (
     <Layout title="About Us" description="Learn more about DevToDollars and our founders">
+      <FixedBackground />
       <div className="py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">

@@ -29,7 +29,7 @@ const steps = [
 
 export default function OurProcess() {
   return (
-    <div className="py-24 sm:py-32 bg-[#343434]">
+    <div className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-base font-semibold leading-7 text-yellow-400">
@@ -48,14 +48,6 @@ export default function OurProcess() {
           <div className="relative mx-auto w-[600px] h-[600px]">
             {/* Connecting circle */}
             <div className="absolute inset-[75px] rounded-full border-2 border-dashed border-yellow-400/30" />
-
-            {/* Center text */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center">
-                <p className="text-2xl font-bold text-yellow-400">Your MVP</p>
-                <p className="text-sm text-gray-400">In 14 days</p>
-              </div>
-            </div>
 
             {/* Step 1 - Top */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 text-center">

@@ -61,6 +61,7 @@ const config: Config = {
         src: 'img/devtodollars.png',
       },
       items: [
+        { to: '/boilerplate', label: 'Boilerplate', position: 'left' },
         {
           type: 'docSidebar',
           sidebarId: 'docsSidebar',
@@ -88,6 +89,10 @@ const config: Config = {
         {
           title: 'Resources',
           items: [
+            {
+              label: 'Boilerplate',
+              to: '/boilerplate',
+            },
             {
               label: 'Docs',
               to: '/docs',

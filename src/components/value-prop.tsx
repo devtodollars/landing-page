@@ -60,7 +60,7 @@ const valueprops: ValueProp[] = [
 
 export default function ValueProp() {
     return (
-        <div className="pt-24 sm:pt-32 sm:pb-5 bg-[#343434]">
+        <div className="pt-24 sm:pt-32 sm:pb-5">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-none text-left">
                     <h2 className="text-base font-semibold leading-7 text-yellow-400">

@@ -6,16 +6,18 @@ import OurProcess from "../components/our-process";
 import AboutUs from "../components/about-us";
 import Testimonial from "../components/testimonial";
 import Cta from "../components/cta";
+import FixedBackground from "../components/fixed-background";
 
 export default function Home(): JSX.Element {
   return (
     <Layout title="Home" description="The World's Most Transparent Dev Agency">
+      <FixedBackground />
       <HeroHome />
       <SplitPaths />
-      <ValueProp />
-      <OurProcess />
       <AboutUs />
       <Testimonial />
+      <OurProcess />
+      <ValueProp />
       <Cta />
     </Layout>
   );
