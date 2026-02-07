@@ -1,4 +1,5 @@
 import Layout from "@theme/Layout";
+import Head from "@docusaurus/Head";
 import { useEffect, useState } from "react";
 import GitHubButton from "react-github-btn";
 import FixedBackground from "../components/fixed-background";
@@ -226,6 +227,13 @@ export default function Boilerplate(): JSX.Element {
       title="Open Source Boilerplate"
       description="Launch your startup in under 30 minutes with our production-ready MVP boilerplate"
     >
+      <Head>
+        <meta property="og:image" content="https://devtodollars.com/img/boilerplate-social.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:image" content="https://devtodollars.com/img/boilerplate-social.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
       <FixedBackground />
       <HeroBoilerplate stars={stars} />
       <ModuleGrid />
