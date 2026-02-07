@@ -80,7 +80,7 @@ export default function ValueProp() {
                             className="rounded-3xl w-full lg:w-[calc(25%-1.25rem)]"
                         >
                             <div className="flex flex-col items-start gap-y-4">
-                                <div className="text-5xl text-black p-4 bg-yellow-400 border-2 border-yellow-400 shadow-lg shadow-yellow-400/50 rounded-lg w-18 h-18 flex items-center justify-center">
+                                <div className="text-5xl text-black p-4 bg-yellow-400 border-2 border-yellow-400 shadow-lg shadow-yellow-400/50 rounded-lg w-14 h-14 flex items-center justify-center">
                                     {tier.icon}
                                 </div>
                                 <h3

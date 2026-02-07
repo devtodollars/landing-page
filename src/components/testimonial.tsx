@@ -71,7 +71,7 @@ export default function FancyTestimonialsSlider() {
       <div className="relative h-32">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] md:w-[480px] h-[480px] pointer-events-none">
           <div className="absolute inset-0 bg-gradient-to-b from-yellow-400/25 via-indigo-500/5 to-indigo-500/0 rounded-full -z-10"></div>
-          <div className="h-32 [mask-image:_linear-gradient(0deg,transparent,theme(colors.white)_20%,theme(colors.white))]">
+          <div className="h-32 [mask-image:_linear-gradient(0deg,transparent,white_20%,white)]">
 
             {testimonials.map((testimonial, index) => (
               <Transition
@@ -136,7 +136,7 @@ export default function FancyTestimonialsSlider() {
         {testimonials.map((testimonial, index) => (
           <button
             key={index}
-            className={`border-none inline-flex justify-center whitespace-nowrap rounded-full px-4 py-2 m-1.5 text-sm font-bold shadow-sm transition-colors duration-300 ${
+            className={`border-none inline-flex justify-center whitespace-nowrap rounded-full px-4 py-2 m-1.5 text-sm font-bold shadow-xs transition-colors duration-300 ${
               active === index
                 ? 'bg-primary text-black shadow-primary/10'
                 : 'bg-white/10 hover:bg-white/20 text-white'

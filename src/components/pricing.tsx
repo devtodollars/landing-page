@@ -110,7 +110,7 @@ export default function Pricing() {
                   </span>
                 </p>
               </div>
-              <div className="flex-grow">
+              <div className="grow">
                 <div
                   role="list"
                   className="mt-8 space-y-3 text-sm leading-6 text-gray-100"
@@ -132,7 +132,7 @@ export default function Pricing() {
                   aria-describedby={tier.id}
                   className={classNames(
                     tier.mostPopular
-                      ? "bg-primary text-black shadow-sm hover:opacity-80 focus-visible:outline-indigo-500 hover:text-black"
+                      ? "bg-primary text-black shadow-xs hover:opacity-80 focus-visible:outline-indigo-500 hover:text-black"
                       : "bg-white/10 text-white hover:bg-white/20 focus-visible:outline-white hover:text-white",
                     "block rounded-md px-3 py-2 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 hover:no-underline",
                   )}

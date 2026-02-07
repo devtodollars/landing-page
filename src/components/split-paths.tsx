@@ -75,7 +75,7 @@ export default function SplitPaths() {
               </p>
               <div
                 role="list"
-                className="mt-8 space-y-3 text-sm leading-6 text-gray-100 flex-grow"
+                className="mt-8 space-y-3 text-sm leading-6 text-gray-100 grow"
               >
                 {path.features.map((feature) => (
                   <div key={feature} className="flex gap-x-3">
@@ -91,14 +91,14 @@ export default function SplitPaths() {
                 {path.id === "agency" ? (
                   <a
                     href="https://cal.com/amirali-tabrizi/30min"
-                    className="rounded-md bg-primary px-3.5 py-2.5 text-center text-sm font-semibold text-black shadow-sm hover:bg-primary/80 hover:text-black hover:no-underline"
+                    className="rounded-md bg-primary px-3.5 py-2.5 text-center text-sm font-semibold text-black shadow-xs hover:bg-primary/80 hover:text-black hover:no-underline"
                   >
                     Book a Free Call
                   </a>
                 ) : (
                   <a
                     href="/boilerplate"
-                    className="rounded-md bg-white/10 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-white/20 hover:text-white hover:no-underline"
+                    className="rounded-md bg-white/10 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-white/20 hover:text-white hover:no-underline"
                   >
                     View Boilerplate
                   </a>

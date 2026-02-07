@@ -159,7 +159,7 @@ export default function OurProcess() {
             <div className="space-y-12">
               {steps.map((step) => (
                 <div key={step.id} className="relative flex items-start gap-6">
-                  <div className="relative z-10 w-16 h-16 rounded-full bg-yellow-400 flex items-center justify-center shadow-lg shadow-yellow-400/50 flex-shrink-0">
+                  <div className="relative z-10 w-16 h-16 rounded-full bg-yellow-400 flex items-center justify-center shadow-lg shadow-yellow-400/50 shrink-0">
                     <step.icon className="w-8 h-8 text-black" />
                   </div>
                   <div className="pt-2">

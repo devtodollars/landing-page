@@ -94,7 +94,7 @@ function HeroBoilerplate({ stars }: { stars: number | null }) {
             </div>
             <a
               href="/docs"
-              className="rounded-md bg-primary px-5 py-3 text-md font-semibold text-black shadow-sm hover:bg-primary/80 hover:no-underline hover:text-black"
+              className="rounded-md bg-primary px-5 py-3 text-md font-semibold text-black shadow-xs hover:bg-primary/80 hover:no-underline hover:text-black"
             >
               Read the Docs
             </a>
@@ -189,13 +189,13 @@ function CtaBoilerplate() {
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="/"
-              className="rounded-md bg-primary px-5 py-3 text-md font-semibold text-black shadow-sm hover:bg-primary/80 hover:no-underline hover:text-black"
+              className="rounded-md bg-primary px-5 py-3 text-md font-semibold text-black shadow-xs hover:bg-primary/80 hover:no-underline hover:text-black"
             >
               View Development Services
             </a>
             <a
               href="https://discord.gg/6q63Xa6SEB"
-              className="rounded-md bg-white/10 px-5 py-3 text-md font-semibold text-white shadow-sm hover:bg-white/20 hover:no-underline hover:text-white"
+              className="rounded-md bg-white/10 px-5 py-3 text-md font-semibold text-white shadow-xs hover:bg-white/20 hover:no-underline hover:text-white"
             >
               Join the Community
             </a>

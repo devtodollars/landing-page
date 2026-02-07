@@ -13,13 +13,13 @@ export default function Cta() {
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="https://cal.com/amirali-tabrizi/30min"
-              className="rounded-md bg-primary px-5 py-3 text-md font-semibold text-black shadow-sm hover:bg-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary hover:no-underline hover:text-black"
+              className="rounded-md bg-primary px-5 py-3 text-md font-semibold text-black shadow-xs hover:bg-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary hover:no-underline hover:text-black"
             >
               Book a Free Consultation
             </a>
             <a
               href="/boilerplate"
-              className="rounded-md bg-white/10 px-5 py-3 text-md font-semibold text-white shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white hover:no-underline hover:text-white"
+              className="rounded-md bg-white/10 px-5 py-3 text-md font-semibold text-white shadow-xs hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white hover:no-underline hover:text-white"
             >
               View the Boilerplate
             </a>
