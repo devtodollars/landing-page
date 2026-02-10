@@ -250,7 +250,7 @@ function CtaBoilerplate() {
             <div className="relative">
               <button
                 onClick={() => setShowDonateMenu(!showDonateMenu)}
-                className="rounded-md bg-primary px-5 py-3 text-md leading-[1.75] font-semibold text-black shadow-xs hover:bg-primary/80 cursor-pointer border-none"
+                className="rounded-md bg-primary px-5 py-3 text-base leading-[1.75] font-semibold text-black shadow-xs hover:bg-primary/80 cursor-pointer border-none"
               >
                 Donate
               </button>
@@ -281,13 +281,13 @@ function CtaBoilerplate() {
             </div>
             <a
               href="/"
-              className="rounded-md bg-white/10 px-5 py-3 text-md font-semibold text-white shadow-xs hover:bg-white/20 hover:no-underline hover:text-white"
+              className="rounded-md bg-white/10 px-5 py-3 text-base leading-[1.75] font-semibold text-white shadow-xs hover:bg-white/20 hover:no-underline hover:text-white"
             >
               View Development Services
             </a>
             <a
               href="https://discord.gg/6q63Xa6SEB"
-              className="rounded-md bg-white/10 px-5 py-3 text-md font-semibold text-white shadow-xs hover:bg-white/20 hover:no-underline hover:text-white"
+              className="rounded-md bg-white/10 px-5 py-3 text-base leading-[1.75] font-semibold text-white shadow-xs hover:bg-white/20 hover:no-underline hover:text-white"
             >
               Join the Community
             </a>
