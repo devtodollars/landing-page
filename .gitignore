@@ -22,3 +22,8 @@ yarn-error.log*
 # ignore blog and docs when using symlinks
 /blog
 /docs
+
+# LinkedIn carousel
+generate-pdf.mjs
+linkedin-carousel.html
+linkedin-carousel.pdf

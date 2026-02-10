@@ -64,6 +64,15 @@ const modules: Module[] = [
     ],
     logos: ["posthog"],
   },
+  {
+    name: "Email",
+    features: [
+      "Complete Loops SMTP setup",
+      "Transactional emails ready to send",
+      "Marketing automation included",
+    ],
+    logos: ["loops"],
+  },
 ];
 
 const MONERO_ADDRESS =
@@ -168,7 +177,7 @@ function ModuleCard({ module }: { module: Module }) {
       className="
         group rounded-2xl
         bg-white/[0.03] border border-white/10
-        p-5
+        p-5 h-full
         transition-all duration-200
         hover:bg-white/[0.06] hover:border-white/20
       "
@@ -219,9 +228,11 @@ function ModuleGrid() {
         </div>
 
         <div className="mx-auto mt-12 sm:mt-16 max-w-4xl">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="flex flex-wrap justify-center gap-4">
             {modules.map((module) => (
-              <ModuleCard key={module.name} module={module} />
+              <div key={module.name} className="w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-11px)]">
+                <ModuleCard module={module} />
+              </div>
             ))}
           </div>
         </div>
