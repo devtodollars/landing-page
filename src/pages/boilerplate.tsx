@@ -2,6 +2,7 @@ import Layout from "@theme/Layout";
 import Head from "@docusaurus/Head";
 import { useEffect, useState } from "react";
 import GitHubButton from "react-github-btn";
+import { CircleDollarSign } from "lucide-react";
 import FixedBackground from "../components/fixed-background";
 
 interface Module {
@@ -50,8 +51,10 @@ const modules: Module[] = [
     features: [
       "Complete Stripe integration",
       "Subscription management",
+      "Optional non-custodial Monero payment management",
+      "Optional Monero app subscription management",
     ],
-    logos: ["stripe"],
+    logos: ["stripe", "monero"],
   },
   {
     name: "Analytics",
@@ -62,6 +65,60 @@ const modules: Module[] = [
     logos: ["posthog"],
   },
 ];
+
+const MONERO_ADDRESS =
+  "82nLM11CewQTvsXa9AoobY98TNptCViCgVpijbE8LEFLjmUxsFoy6zeAMfiATS9oLuDKdUWJkMUMi6APZPjiWwguL6izV8m";
+
+function MoneroModal({ onClose }: { onClose: () => void }) {
+  const [copied, setCopied] = useState(false);
+
+  const copyAddress = () => {
+    navigator.clipboard.writeText(MONERO_ADDRESS);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-4"
+      onClick={onClose}
+    >
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+      <div
+        className="relative bg-white/[0.03] border border-white/10 rounded-2xl p-6 max-w-md w-full"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button
+          onClick={onClose}
+          className="absolute top-3 right-3 text-gray-400 hover:text-white text-xl leading-none cursor-pointer bg-transparent border-none"
+        >
+          &#x2715;
+        </button>
+        <h3 className="text-lg font-semibold text-white mb-4 text-center">
+          Donate with Monero
+        </h3>
+        <div className="flex justify-center mb-4">
+          <img
+            src="/img/monero-donate-qr.svg"
+            alt="Monero QR Code"
+            className="w-48 h-48 rounded-lg bg-white p-2"
+          />
+        </div>
+        <div className="bg-white/[0.05] border border-white/10 rounded-lg p-3 mb-4">
+          <p className="text-xs text-gray-300 font-mono break-all m-0 select-all">
+            {MONERO_ADDRESS}
+          </p>
+        </div>
+        <button
+          onClick={copyAddress}
+          className="w-full rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-black cursor-pointer border-none hover:bg-primary/80"
+        >
+          {copied ? "Copied!" : "Copy Address"}
+        </button>
+      </div>
+    </div>
+  );
+}
 
 function HeroBoilerplate({ stars }: { stars: number | null }) {
   return (
@@ -175,21 +232,56 @@ function ModuleGrid() {
 
 
 function CtaBoilerplate() {
+  const [showDonateMenu, setShowDonateMenu] = useState(false);
+  const [showMoneroModal, setShowMoneroModal] = useState(false);
+
   return (
     <div className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Need Help Building?
+            Support the Project
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            If you'd prefer to focus on your business while we handle the
-            technical complexity, check out our development services.
+            If this boilerplate saved you time, consider supporting its
+            continued development — or reach out if you need help building.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="relative">
+              <button
+                onClick={() => setShowDonateMenu(!showDonateMenu)}
+                className="rounded-md bg-primary px-5 py-3 text-md leading-[1.75] font-semibold text-black shadow-xs hover:bg-primary/80 cursor-pointer border-none"
+              >
+                Donate
+              </button>
+              {showDonateMenu && (
+                <div className="absolute top-full mt-2 left-0 bg-white/[0.03] border border-white/10 rounded-xl overflow-hidden min-w-[200px] z-10">
+                  <a
+                    href="https://buy.stripe.com/14A8wPgrZ55n2qc71kfrW00"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2.5 px-4 py-3 text-sm text-white hover:bg-white/10 hover:no-underline hover:text-white"
+                    onClick={() => setShowDonateMenu(false)}
+                  >
+                    <CircleDollarSign className="w-5 h-5 shrink-0 text-green-500" />
+                    Donate with USD
+                  </a>
+                  <button
+                    onClick={() => {
+                      setShowDonateMenu(false);
+                      setShowMoneroModal(true);
+                    }}
+                    className="flex items-center gap-2.5 w-full text-left px-4 py-3 text-sm text-white hover:bg-white/10 cursor-pointer bg-transparent border-none border-t border-t-white/10"
+                  >
+                    <img src="/img/tech/monero.svg" alt="Monero" className="w-5 h-5 shrink-0" />
+                    Donate with Monero
+                  </button>
+                </div>
+              )}
+            </div>
             <a
               href="/"
-              className="rounded-md bg-primary px-5 py-3 text-md font-semibold text-black shadow-xs hover:bg-primary/80 hover:no-underline hover:text-black"
+              className="rounded-md bg-white/10 px-5 py-3 text-md font-semibold text-white shadow-xs hover:bg-white/20 hover:no-underline hover:text-white"
             >
               View Development Services
             </a>
@@ -202,6 +294,9 @@ function CtaBoilerplate() {
           </div>
         </div>
       </div>
+      {showMoneroModal && (
+        <MoneroModal onClose={() => setShowMoneroModal(false)} />
+      )}
     </div>
   );
 }
