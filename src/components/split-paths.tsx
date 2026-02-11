@@ -89,12 +89,20 @@ export default function SplitPaths() {
               </div>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 {path.id === "agency" ? (
-                  <a
-                    href="https://cal.com/amirali-tabrizi/30min"
-                    className="rounded-md bg-primary px-3.5 py-2.5 text-center text-sm font-semibold text-black shadow-xs hover:bg-primary/80 hover:text-black hover:no-underline"
-                  >
-                    Book a Free Call
-                  </a>
+                  <>
+                    <a
+                      href="https://cal.com/amirali-tabrizi/30min"
+                      className="rounded-md bg-primary px-3.5 py-2.5 text-center text-sm font-semibold text-black shadow-xs hover:bg-primary/80 hover:text-black hover:no-underline"
+                    >
+                      Book a Free Call
+                    </a>
+                    <a
+                      href="mailto:amirali@devtodollars.com"
+                      className="rounded-md bg-primary px-3.5 py-2.5 text-center text-sm font-semibold text-black shadow-xs hover:bg-primary/80 hover:text-black hover:no-underline"
+                    >
+                      Get In Touch
+                    </a>
+                  </>
                 ) : (
                   <a
                     href="/boilerplate"
