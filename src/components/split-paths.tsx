@@ -7,7 +7,7 @@ const paths = [
     description:
       "Focus on your business while we handle the technical complexity",
     features: [
-      "Dedicated tech co-founder experience",
+      "Dedicated CTO level experience",
       "MVP delivered in 14 days",
       "AI-accelerated development",
       "Post-launch support & iteration",
