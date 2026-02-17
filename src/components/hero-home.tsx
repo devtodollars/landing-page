@@ -21,7 +21,7 @@ export default function HeroHome() {
     <section className="relative isolate pt-14">
       <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
         <div className="text-center">
-        <h1 className="text-5xl font-bold tracking-tight text-white md:text-6xl lg:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-primary">
+        <h1 className="text-5xl font-bold tracking-tight text-white md:text-6xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-primary">
           <span className="text-primary "> Chief Technology Officer</span>
           <br /> {/* New line added here */}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-white tracking-wide">
